@@ -1,0 +1,16 @@
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    font-size: 2em;
+    color: white;
+    margin: 0;
+}
+header{
+    background: #CB371;
+    font-family: 'Mali', cursive;
+}
+
