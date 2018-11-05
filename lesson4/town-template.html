@@ -4,18 +4,23 @@
     <!--Tanya Meyer CIT230-07 Weather Site-->
 	<meta charset="utf-8">
 	<title>CIT Weather</title>
-	<meta name="description" content="This is my attempt at building the CIT230 weather site.">
-    <link rel="stylesheet" href="styles/style.css">
+    <meta name="description" content="This is my attempt at building the CIT230 weather site. CIT Weather, weather for programmers.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="images/logo.jpg" alt="logo image">
-            <img src="images/iamge2.jpg" alt="current conditions">
-            <h1>CIT Weather</h1>
-            <h2>Weather for programmers</h2>
-            <h2>subject to change when I think of something more catchy</h2>
+            <img src="images/logo.png" alt="logo image">
+            <div class="headertext">
+                <h1>CIT Weather</h1>
+                <div class="motto">Weather for programmers</div>
+            </div>
+            <div class="currentconditions">
+                    <img src="images/sunny.png" alt="sunny icon">
+                    <p>Sunny</p>
+            </div>            
         </header>
         <nav>
             <ul>
@@ -47,7 +52,7 @@
             <article>
                 <h6>Article Title</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum urna dui. Ut imperdiet facilisis sapien. Nunc ultrices sem eget ligula hendrerit pulvinar non et tellus. Ut dignissim vel ipsum sagittis faucibus. Aenean iaculis eleifend nulla id rhoncus. Cras velit leo, maximus et finibus a, molestie eget quam.</p>
-                <img src="images/acticlepic.jpg" alt="Picture about article">
+                <img src="images/articlepic.jpg" alt="Picture about article">
             </article>
             <footer>
                 <div>
@@ -58,7 +63,7 @@
                     <p>contact email</p>
                 </div>
                 <div>        
-                    <small>&copy;2018 | Tanya Meyer | terms of use link | current date</small>
+                    <small>&copy;2018 | Tanya Meyer | <a href="http://byui.edu/">Terms of Use</a> | current date</small>
                 </div>
             </footer>
         </main>
