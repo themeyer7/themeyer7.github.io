@@ -1,5 +1,4 @@
-/* CIT 230 - Assignment Portal CSS Template */
-/* You may use #HEX or color names */
+/* CIT 230 - Assignment Portal CSS */
 
 /* * is a wildcard referring to all elements. */
 * { margin: 0; box-sizing: border-box; } 
@@ -12,8 +11,9 @@ body {
 }
 
 h1 {
+    font-family: 'Permanent Marker', cursive;
     font-size: 2.0rem;
-    color: black;
+    color: plum;
 }
 
 h2 {
@@ -31,13 +31,16 @@ header, main, footer {
 header, footer, footer a {
     text-align: center;
     background-color: purple;
-    color: whitesmoke;
+    color: plum;
+    border-radius: 5px;
 }
 
 header img {
     width: 100px;
     height: auto;
     float: right;
+    border-radius: 5px;
+    border: 5px double #404040
 }
 
 footer {
