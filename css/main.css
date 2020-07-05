@@ -1,4 +1,4 @@
-/* CIT 230 - Assignment Portal CSS */
+/* WDD 230 - Assignment Portal CSS */
 
 /* * is a wildcard referring to all elements. */
 * { margin: 0; box-sizing: border-box; } 
@@ -33,15 +33,14 @@ header, footer, footer a {
     text-align: center;
     background-color: purple;
     color: plum;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-header img {
-    width: 100px;
+.profile {
+    width: 150px;
     height: auto;
-    float: right;
-    border-radius: 5px;
-    border: 3px groove #666666
+    border-radius: 70px;
+    border: 3px groove #666
 }
 
 footer {
