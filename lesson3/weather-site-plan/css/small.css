@@ -1,0 +1,129 @@
+
+
+/* BODY */
+body {
+  font-size: 16px;
+  font-family: 'Comic Neue', 'comic sans ms', sans-serif;
+}
+
+/* HEADER */
+header {
+  background-color: #215fbc;
+  color: #c2e5ff;
+  font-family: Mali, cursive;
+  padding: .5rem 2%;
+}
+
+header img {
+  float: left;
+  margin-right: 10px;
+  width: 50px;
+}
+
+header h1, header h2 {
+  margin: 0;
+  text-align: center;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: #74a2e7;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 1px 0 0 0;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  color: #0C2346;
+  padding: .5rem 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+nav ul li a:hover {
+  background-color: #4ea663;
+  /*color: #c2e5ff;*/
+}
+
+nav ul li.active a {
+  background-color: #215fbc;
+  color: #c2e5ff;
+}
+
+/* MAIN */
+main {
+  background-image: linear-gradient(#cbdcf6, #d5ebdb);
+  padding: 20px 2%;
+  min-height: 10rem;
+}
+
+main h1 {
+  margin: 0;
+  text-decoration: #0C2346 overline underline;
+  text-align: center;
+}
+
+/* COLORS PAGE */
+h4 {
+  font-size: 1.25em;
+  margin: 0 0 10px 0;
+}
+
+.colors p {margin: 0;}
+
+.colors {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.header {
+  background-color: #215fbc;
+  color: #c2e5ff;
+}
+
+.nav {
+  background-color: #74a2e7;
+  color: #0C2346;
+}
+
+.nav-active {
+  background-color: #215fbc;
+  color: #c2e5ff;
+}
+
+.nav-hover {
+  background-color: #4ea663;
+  color: #0C2346;
+}
+
+.body {
+  background-image: linear-gradient(#cbdcf6, #d5ebdb);
+  color: #000;
+  border: 1px solid #0C2346
+}
+
+.footer {
+  background-color: #4ea663;
+  color: #0C2346;
+}
+
+/* TYPOGRAPHY PAGE */
+
+
+
+
+
+/* FOOTER */
+footer {
+  background-color: #4ea663;
+  color: #0C2346;
+  padding: .5rem 2%;
+  text-align: center;
+}
