@@ -1,5 +1,3 @@
-
-
 /* BODY */
 body {
   font-size: 16px;
@@ -39,11 +37,11 @@ nav ul {
 nav ul li a {
   display: block;
   color: #0C2346;
+  font-size: 1.25em;
   padding: .5rem 0;
   text-decoration: none;
   text-align: center;
 }
-
 
 nav ul li a:hover {
   background-color: #4ea663;
@@ -62,25 +60,24 @@ main {
   min-height: 10rem;
 }
 
-main h1 {
-  margin: 0;
+.page-title {
+  margin: 0 0 25px 0;
   text-decoration: #0C2346 overline underline;
   text-align: center;
 }
 
-/* COLORS PAGE */
-h4 {
-  font-size: 1.25em;
+/* COLORS PAGE & TYPOGRAPHY PAGE */
+.colors h3, .fonts h1, .fonts h2, .fonts h3, .fonts h4 {
   margin: 0 0 10px 0;
 }
 
-.colors p {margin: 0;}
+.colors p, fonts p {margin: 0;}
 
-.colors {
+.colors, .fonts {
   text-align: center;
   padding: 10px;
   border-radius: 10px;
-  margin: 10px 0;
+  margin: 10px 15px;
 }
 
 .header {
@@ -103,10 +100,10 @@ h4 {
   color: #0C2346;
 }
 
-.body {
+.body, .paragraph {
   background-image: linear-gradient(#cbdcf6, #d5ebdb);
   color: #000;
-  border: 1px solid #0C2346
+  border: 1px solid #0C2346;
 }
 
 .footer {
@@ -116,9 +113,9 @@ h4 {
 
 /* TYPOGRAPHY PAGE */
 
-
-
-
+.nav-title {
+  font-size: 1.25em;
+}
 
 /* FOOTER */
 footer {
@@ -126,4 +123,11 @@ footer {
   color: #0C2346;
   padding: .5rem 2%;
   text-align: center;
+}
+
+/* Clearfix: Force an Element not to collapse */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
