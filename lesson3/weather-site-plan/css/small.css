@@ -26,6 +26,7 @@ header h1, header h2 {
 /* NAVIGATION */
 nav {
   background-color: #74a2e7;
+  padding: 0 2%;
 }
 
 nav ul {

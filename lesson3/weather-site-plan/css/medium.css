@@ -1,6 +1,11 @@
 /* MEDIA QUERY - MEDIUM */
 @media only screen and (min-width: 550px) {
 
+  header, nav, main, footer {
+    max-width: 64rem;
+    margin:auto;
+  }
+
   /* BODY */
     
   /* HEADER */
