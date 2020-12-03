@@ -10,9 +10,10 @@
     
   /* HEADER */
   header img {
+    height: 70px;
     width: auto;
     margin: 0;
-    height: 70px;
+    
   }
   
   /* NAVIGATION */
