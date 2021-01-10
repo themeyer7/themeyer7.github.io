@@ -1,0 +1,40 @@
+/* MEDIA QUERY - MEDIUM */
+@media only screen and (min-width: 550px) {
+
+  /* BODY */
+    
+  /* HEADER */
+  header {
+    height: 70px;
+  }
+
+  header img {
+    height: 70px;
+    width: auto;
+    margin: 0;
+  }
+  
+  .motto {font-size: 1.25rem;}
+
+  /* NAVIGATION */
+  nav button {
+    display: none;
+  }
+
+  .hide {
+    display: flex;
+  }
+
+
+  nav ul li {
+    /*float: left;*/
+    border-right: 1px solid white;
+  }
+
+  nav ul li a{padding: .5rem 0;}
+    
+  /* MAIN */
+
+  /* FOOTER */
+
+} /* end MEDIA QUERY */

@@ -1,0 +1,107 @@
+
+/* BODY */
+body {
+  font-size: 16px;
+  font-family: 'Comic Neue', 'comic sans ms', sans-serif;
+}
+
+/* HEADER */
+header {
+  background-color: #215fbc;
+  color: #c2e5ff;
+  font-family: Mali, cursive;
+  padding: .5rem 2%;
+}
+
+header img {
+  float: left;
+  margin-right: 10px;
+  width: 55px;
+}
+
+header h1, .motto {
+  margin: 0;
+  text-align: center;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: #74a2e7;
+  padding: 0 2%;
+}
+
+nav button {
+  background-color: transparent;
+  font-size: 1.6rem;
+  margin: .2rem 0;
+  border: none;
+  /* How do I center the button? */
+}
+
+.hide {
+  display: none;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 1px 0 0 0;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  color: #0C2346;
+  font-size: 1.25em;
+  padding: .5rem 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background-color: #4ea663;
+  /*color: #c2e5ff;*/
+}
+
+nav ul li.active a {
+  background-color: #215fbc;
+  color: #c2e5ff;
+}
+
+/* MAIN */
+main{
+  background-image: linear-gradient(#cbdcf6, #d5ebdb);
+  padding: 20px 2%;
+  min-height: 10rem;
+}
+
+h2 {
+  margin: 0 0 20px 0;
+  text-decoration: #0c2346 overline underline;
+  /*text-align: center; */
+}
+
+/*main div*/.tempbox {
+  background-color: rgb(223, 223, 223);
+  border: 2px solid #A8AEC1;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #4ea663;
+  color: #0C2346;
+  padding: .5rem 2%;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Clearfix: Force an Element not to collapse */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
