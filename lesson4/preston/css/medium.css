@@ -1,5 +1,5 @@
 /* MEDIA QUERY - MEDIUM */
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 628px) {
 
   /* BODY */
     
@@ -25,13 +25,11 @@
     display: flex;
   }
 
-
   nav ul li {
-    /*float: left;*/
     border-right: 1px solid white;
   }
 
-  nav ul li a{padding: .5rem 0;}
+  nav ul li a{padding: .5rem;}
     
   /* MAIN */
 
