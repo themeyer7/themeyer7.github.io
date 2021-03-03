@@ -21,8 +21,12 @@
     display: none;
   }
 
-  .hide {
+   nav ul{
     display: flex;
+  }
+
+  nav ul li:first-child {
+    border-left: 1px solid white;
   }
 
   nav ul li {
@@ -35,4 +39,4 @@
 
   /* FOOTER */
 
-} /* end MEDIA QUERY */
+} /* end MEDIUM media query */

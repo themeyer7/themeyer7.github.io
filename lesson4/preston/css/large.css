@@ -1,12 +1,12 @@
 /* MEDIA QUERY - LARGE */
 @media only screen and (min-width: 1024px) {
 
+  #headerWrap {background-color: #215fbc;} #navWrap {background-color: #74a2e7;}
 
-
+  /* center content on wide screen */
   header, nav, main, footer {
     max-width: 64rem;
     margin:auto;
   }
 
-
-}
+} /* end LARGE media query
