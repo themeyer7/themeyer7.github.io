@@ -12,4 +12,4 @@ document.getElementById('currentyear').innerHTML = new Date().toLocaleDateString
 
 document.getElementById('currentdate').innerHTML = new Date().toLocaleDateString("en-US", option2);
 
- 
+

@@ -9,6 +9,9 @@
   <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- favicon -->
+  <link rel="shortcut icon" href="favicon-rainbow.ico">
+
   <!--Stylesheets-->
   <!--normalize-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
@@ -26,7 +29,7 @@
 
   <div id="headerWrap">
     <header>
-      <a href="#"></a><img src="images/logo.png" alt="WDD Weather logo"></a>
+      <a href="#"><img src="images/logo.png" alt="WDD Weather logo"></a>
       <h1>WDD Weather</h1>
       <div class="motto">Weather for Programmers</div>
     </header>
@@ -34,7 +37,9 @@
   
   <div id="navWrap">
     <nav class="clearfix">
-      <button onclick="toggleMenu()">&#9776;🌞</button> <!--toggle to one of these ⛅☔🌈-->
+      <button onclick="toggleMenu()">&#9776;🌞</button>
+      <!-- <button class="hide" onclick="toggleMenu()">&#9776;⛅</button> -->
+      <!--toggle to one of these ⛅☔🌈-->
       <ul id="primaryNav" class="hide">
           <li><a href="#">Home</a></li>
           <li class="active"><a href="#">Preston</a></li>
@@ -45,38 +50,18 @@
       </ul>
     </nav>
   </div>
-
+ 
   <div id="mainWrap">
     <main>
       <h2>Preston, Idaho</h2>
 
-      <section>
-        <img src="#" alt="Hero image">
-        <h3>Weather Summary</h3>
-        <p>current weather summary</p>
-      </section>
+      <div class="tempbox">Hero Image/Weather Summary</div>
 
-      <section>
-        <h3>Five Day Forcast</h3>
-        <ul>
-          <li>Day 1</li>
-          <li>Day 2</li>
-          <li>Day 3</li>
-          <li>Day 4</li>
-          <li>Day 5</li>
-        </ul>
-      </section>
+      <div class="tempbox">Five Day Forcast</div>
 
-      <article>
-        <h3>Article Title</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, assumenda fugit odio ullam beatae recusandae suscipit? Libero ratione commodi dolore, inventore facilis debitis illum? Aliquam minus a accusantium laudantium dolores.
-        <img src="#" alt="Picture about article">
-        </p>
-      </article>
+      <div class="tempbox">Article</div>
 
-      <section>
-        <h3>Contact Information</h3>
-      </section>
+      <div class="tempbox">Contact Information</div>
     </main>
   </div>
   
