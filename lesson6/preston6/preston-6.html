@@ -60,16 +60,23 @@
 
       <div class="herodiv">
       
-        <img class="heropic" src="images/hero-image.jpg"  alt="firetruck">
+        <!-- <img class="heropic" src="images/hero-image.jpg"  alt="firetruck"> -->
+        <picture>
+          <source class="heropic" media="(max-width: 350px)" srcset="images/wdd230_image_franklin400.jpg">
+          <source class="heropic" media="(max-width: 700px)" srcset="images/wdd230_image_franklin800.jpg">
+          <img class="heropic" src="images/wdd230_image_franklin1200.jpg"  alt="field in franklin">
+        </picture>
 
         <section class="weathersummary">
           <h3 class="summarytitle">Weather Summary</h3>
-          <p class="high1 left">High:</p>
-          <p class="high2 right">Temp</p>
-          <p class="low1 left">Low:</p>
-          <p class="low2 right">Temp</p>
-          <p class="wind1 left">Wind:</p>
-          <p class="wind2 right">Speed</p>
+          <p class="left">High:</p>
+          <p class="right"><span id="temp">34</span>&deg;F</p>
+          <p class="left">Low:</p>
+          <p class="right">19&deg;F</p>
+          <p class="left">Wind Chill:</p>
+          <p class="right" id="chill">Brrr</p>
+          <p class="left">Wind:</p>
+          <p class="right"><span id="wind">25</span>mph</p>
         </section>
 
       </div>
@@ -149,6 +156,10 @@
   </div>
 
   <script src="js/weatherscripts.js"></script>
+  <script src="js/windchill.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/webfontload2.js"></script>
+
 
 </body>
 </html>
