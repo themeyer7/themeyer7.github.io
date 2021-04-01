@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazy loading practice</title>
+  <meta name="description" content="learning how to lazy load images">
+  <link rel="stylesheet" href="lazyloadcss.css">
+</head>
+
+<body>
+
+<div class="wrapper">  
+  <h1>My Leatherwork Projects</h1>
+  <h2>Progressive Loading of Images</h2>
+
+  <picture>
+    <img src='images/placeholder400.png' data-src='images/leatherbelt400.jpg' alt='leather belt'>
+  </picture>
+
+  <picture>
+    <img src='images/placeholder400.png' data-src='images/leathercases400.jpg' alt='leather knife cases'>
+  </picture>
+
+  <picture>
+    <img src='images/placeholder400.png' data-src='images/leatherpouch400.jpg' alt='leather belt pouch'>
+  </picture>
+
+  <picture>
+    <img src='images/placeholder400.png' data-src='images/leatherrose400.jpg' alt='leather rose'>
+  </picture>
+
+  <picture>
+    <img src='images/placeholder400.png' data-src='images/leatherfeather400.jpg' alt='leather feather'>
+  </picture>
+
+  <picture>
+    <img src='images/placeholder400.png' data-src='images/leathercarving400.jpg' alt='leather carving'>
+  </picture>
+</div>
+
+  <script src="lazyloadjs.js"></script>
+</body>
+</html>

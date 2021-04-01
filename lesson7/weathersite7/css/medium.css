@@ -1,0 +1,92 @@
+/* MEDIA QUERY - MEDIUM */
+@media only screen and (min-width: 645px) {
+
+  /* BODY */
+    
+  /* HEADER */
+  header {
+    height: 70px;
+  }
+
+  header img {
+    height: 70px;
+    width: auto;
+    margin: 0;
+  }
+  
+  .motto {font-size: 1.25rem;}
+
+  /* NAVIGATION */
+  nav button {
+    display: none;
+  }
+
+   #primaryNav{
+    display: flex;
+  }
+
+  nav ul li:first-child {
+    border-left: 1px solid white;
+  }
+
+  nav ul li {
+    border-right: 1px solid white;
+  }
+
+  nav ul li a{padding: .5rem;}
+    
+  /* MAIN */
+
+  section.forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .forecast h3 {
+    grid-column: 1/-1;
+    margin: 1em 0 0 0;
+  }
+
+  .forecast div {
+    border: 1px solid #215fbc;
+    border-radius: 7px;
+    text-align: center;
+  }
+
+  .forecast div h5 {
+    background-color: #74a2e7;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .forecast div img {
+    width: 75px;
+    padding: 5px;
+  }
+
+  .forecast div p {
+    margin: 0 0 1em 0;
+  }
+
+  article img {
+    width: auto;
+    float: right;
+  }
+
+  /*.tempbox {clear: both;}*/
+
+  .contactinfo {
+    grid-template-columns: 1fr 1fr 1.5fr;
+  }
+  
+  .contactinfo img {
+    grid-column: 3;
+    grid-row: 2/5;
+  }
+
+  /* FOOTER */
+
+} /* end MEDIUM media query */
