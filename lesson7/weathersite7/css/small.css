@@ -175,6 +175,43 @@ footer p {
   margin: 0;
 }
 
+/* Gallery page */
+
+div.gallerywrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+  justify-items: center;
+}
+
+figure {
+  margin: 0;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+img {
+  border-radius: 10px 10px 0 0;
+}
+
+figcaption {
+  text-align: center;
+  border: 1px solid black;
+  margin: 1.5px;
+  border-radius: 0 0 10px 10px;
+  padding: 2px 0;
+}
+
+/* blur placeholder */
+figure img[data-src] {
+  filter: blur(0.2em);
+}
+
+figure img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
 /* Clearfix: Force an Element not to collapse */
 .clearfix:after {
   content: "";

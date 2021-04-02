@@ -10,4 +10,14 @@
     margin:auto;
   }
 
+  /* Gallery page */
+
+  div.gallerywrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  figure:hover {
+    box-shadow: 5px 5px 5px gray;
+  }
+
 } /* end LARGE media query */

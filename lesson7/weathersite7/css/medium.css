@@ -89,4 +89,9 @@
 
   /* FOOTER */
 
+  /* Gallery page */
+
+  div.gallerywrapper {
+    grid-template-columns: 1fr 1fr;
+
 } /* end MEDIUM media query */
