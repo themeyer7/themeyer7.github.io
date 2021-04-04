@@ -191,6 +191,7 @@ figure {
 }
 
 img {
+  max-width: 100%;
   border-radius: 10px 10px 0 0;
 }
 
@@ -201,6 +202,7 @@ figcaption {
   border-radius: 0 0 10px 10px;
   padding: 2px 0;
 }
+
 
 /* blur placeholder */
 figure img[data-src] {
