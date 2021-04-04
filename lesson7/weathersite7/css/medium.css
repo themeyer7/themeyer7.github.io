@@ -60,6 +60,7 @@
     background-color: #74a2e7;
     margin: 0;
     padding: 1rem;
+    border-radius: 7px 7px 0 0;
   }
 
   .forecast div img {
