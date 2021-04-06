@@ -1,30 +1,30 @@
 //load images via js
 
-let imagesToLoad = document.querySelectorAll('img[data-src]');
+const imagesToLoad = document.querySelectorAll("img[data-src]");
+
+const imgOptions = {
+  threshold: 0.5,
+  rootMargin: "0px 0px 50px 0px",
+};
 
 const loadImages = (image) => {
-  image.setAttribute('src', image.getAttribute('data-src'));
+  image.setAttribute("src", image.getAttribute("data-src"));
   image.onload = () => {
-    image.removeAttribute('data-src');
+    image.removeAttribute("data-src");
   };
 };
 
-imagesToLoad.forEach((img) => {
-  loadImages(img);
-});
-
 //intersection observer
-/*
-if('IntersectionObserver' in window) {
+
+if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver((items, observer) => {
     items.forEach((item) => {
-      if(item.isIntersecting) {
+      if (item.isIntersecting) {
         loadImages(item.target);
         observer.unobserve(item.target);
       }
     });
-  });
-  
+  }, imgOptions);
   imagesToLoad.forEach((img) => {
     observer.observe(img);
   });
@@ -32,21 +32,4 @@ if('IntersectionObserver' in window) {
   imagesToLoad.forEach((img) => {
     loadImages(img);
   });
-}  */
-
-if(!!window.IntersectionObserver){console.log("I support Inserction Observer.")}
-
-
-// create a function
-let myObserver = new IntersectionObserver((myListA, myObserver) => {
-myListA.forEach(cupX => {
-if(cupX.isIntersecting){
-cupX.target.src = cupX.target.dataset.src;
-cupX.target.removeAttribute('data-src');
-myObserver.unobserve(cupX.target);
 }
-});
-}, {rootMargin: "0px 0px -10px 0px"});
-
-// make a list of all images with a data source and send that list to myObserver
-document.querySelectorAll('img[data-src]').forEach(img => {myObserver.observe(img) });

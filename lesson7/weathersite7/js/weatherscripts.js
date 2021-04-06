@@ -28,4 +28,3 @@ if (dayNumber == 5) {
 } else {
   element.classList.add("hideme");
 }
-
