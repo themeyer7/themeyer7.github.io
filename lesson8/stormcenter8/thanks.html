@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Tanya Meyer WDD230 Weather Site-->
+  <meta charset="UTF-8">
+  <title>WDD Weather</title>
+  <meta name="description" content="This is my attempt at building the WDD230 weather site, WDD Weather - weather for programmers.">
+  <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="favicon-rainbow.ico">
+
+  <!--Stylesheets-->
+  <!--normalize-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  <!-- phone-default -->
+  <link href="css/small.css" rel="stylesheet">
+  <!-- enhance-tablet -->
+  <link href="css/medium.css" rel="stylesheet">
+  <!-- enhance-desktop -->
+  <link href="css/large.css" rel="stylesheet">
+  <!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Mali&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="headerWrap">
+    <header>
+      <a href="#"><img src="images/logo.png" alt="WDD Weather logo"></a>
+      <h1>WDD Weather</h1>
+      <div class="motto">Weather for Programmers</div>
+    </header>
+  </div>
+  
+  <div id="navWrap">
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;🌞</button>
+      <!-- <button class="hide" onclick="toggleMenu()">&#9776;⛅</button> -->
+      <!--toggle to one of these ⛅☔🌈-->
+      <ul id="primaryNav" class="hide">
+          <li><a href="#">Home</a></li>
+          <li><a href="preston-7.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li class="active"><a href="#">Storm Center</a></li>
+          <li><a href="gallery-7.html">Gallery</a></li>    
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <h2>Storm Center</h2>
+
+    <p class="thanks">Thank you.</p>
+    <p class="thanks">STAY SAFE</p>
+    
+  </main>
+  
+  <div id="footerWrap">
+    <footer>
+      <p>&copy;<span id="currentyear"></span> ❄ WDD Weather ❄ Tanya Meyer</p>
+      <p><span id="currentdate"></span></p> <!-- current date -->
+    </footer>
+  </div>
+
+  <script src="js/weatherscripts.js"></script>
+  <script src="js/windchill.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/webfontload2.js"></script>
+  <script src="js/imageloadjs.js"></script>
+
+</body>
+</html>
