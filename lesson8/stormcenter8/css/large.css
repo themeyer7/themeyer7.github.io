@@ -10,6 +10,11 @@
     margin:auto;
   }
 
+/* Storm Center page */
+  form label.danger {
+    padding: .25rem;
+  }
+
   /* Gallery page */
 
   div.gallerywrapper {
