@@ -1,0 +1,314 @@
+/* SMALL CSS */
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-size: 16px;
+  font-family: 'Comic Neue', 'comic sans ms', sans-serif;
+}
+
+/* HEADER */
+header {
+  background-color: #215fbc;
+  color: #c2e5ff;
+  font-family: Mali, cursive;
+  padding: .5rem 2%;
+}
+
+header img {
+  float: left;
+  margin-right: 10px;
+  width: 55px;
+}
+
+header h1, .motto {
+  margin: 0;
+  text-align: center;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: #74a2e7;
+  padding: 0 2%;
+}
+
+nav button {
+  background-color: transparent;
+  font-size: 1.6rem;
+  margin: .2rem 0;
+  border: none;
+
+  /* How do I center the button? */
+}
+
+.hide {
+  display: none;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 1px 0 0 0;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  color: #0C2346;
+  font-size: 1.25em;
+  padding: .5rem 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background-color: #4ea663;
+}
+
+nav ul li.active a {
+  background-color: #215fbc;
+  color: #c2e5ff;
+}
+
+/* MAIN */
+main{
+  background-image: linear-gradient(#cbdcf6, #d5ebdb);
+  padding: 20px 2%;
+  min-height: 10rem;
+}
+
+div#message {
+  background-color: yellow;
+  text-align: center;
+  padding: 5px 0;
+}
+
+div.showme {display: block;}
+div.hideme {display: none;}
+
+h2 {
+  margin: 0 0 20px 0;
+  text-decoration: #0c2346 overline underline;
+  /*text-align: center; */
+}
+
+/*.tempbox {
+  background-color: rgb(223, 223, 223);
+  border: 2px solid #A8AEC1;
+  border-radius: 5px;
+  margin: 5px;
+}*/
+
+.herodiv {
+  position: relative;
+}
+
+.heropic {
+  width: 100%;
+}
+
+.weathersummary {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: radial-gradient(#cbdcf6, #74a2e7);
+  border: solid 2px #0c2346;
+  opacity: .7;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.summarytitle {
+  text-decoration: underline;
+  grid-column: 1/-1;
+  justify-self: center;
+}
+
+.summarytitle, .left, .right {
+  margin: 0;
+  padding: 3px;
+}
+
+.left {justify-self: right;}
+
+.right {justify-self: left;}
+
+section.forecast {
+  display: none;
+}
+
+.article h3 {margin: 1rem 0 .5rem 0}
+.article p {margin-top: 0;}
+
+article img {
+  width: 100%;
+  max-width: 350px;
+  order: 2;
+}
+
+/*main-contact box*/
+
+div.contactinfo {
+  border: 1px solid #4ea663;
+  padding: 2%;
+}
+
+.contactinfo h4 {margin: 0;}
+
+.contactinfo p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.contactinfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contactinfo h3 {
+  grid-column: 1/-1;
+  margin: 0 0 1em 0;
+  text-decoration: underline;
+}
+.contactinfo .address {grid-row: 2/4;}
+.contactinfo .email {grid-column: 2;}
+.contactinfo img {
+  grid-column: 1/-1;
+  width: 100%;
+  max-width: 350px;
+  justify-self: center;
+}
+
+/* FOOTER */
+footer {
+  background-color: #4ea663;
+  color: #0C2346;
+  padding: .5rem 2%;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Storm Center */
+
+img.lights {
+  display: none;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #215fbc;
+  border-radius: 10px;
+  padding: .5rem 2%;
+  max-width: 22rem;
+}
+
+form legend {
+  color: #0C2346;
+  margin: 0 1rem;
+  border: 1px solid #215fbc;
+  border-radius: 10px; 
+  padding: .25rem .5rem;
+}
+
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  font-size: .9rem;
+}
+
+form label.top input, form label.top select, form label.top textarea {
+  /*-webkit-appearance: none;*/
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #215fbc;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #0C2346;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+  display: block;
+  padding: .75rem .25rem;
+  color: #0C2346;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #215fbc;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+/* Thanks page */
+p.thanks {
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* Gallery page */
+
+div.gallerywrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+  justify-items: center;
+}
+
+figure {
+  margin: 0;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+img.gallery {
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+figcaption {
+  text-align: center;
+  border: 1px solid black;
+  margin: 1.5px;
+  border-radius: 0 0 10px 10px;
+  padding: 2px 0;
+}
+
+
+/* blur placeholder */
+figure img[data-src] {
+  filter: blur(0.2em);
+}
+
+figure img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+/* Clearfix: Force an Element not to collapse */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
