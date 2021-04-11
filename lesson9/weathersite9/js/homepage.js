@@ -51,7 +51,7 @@ fetch(requestURL)
 
         //external image
         let image = document.createElement('img');
-        image.setAttribute('src', towns[i].photo);
+        image.setAttribute('src', 'images/' + towns[i].photo);
         image.setAttribute('alt', towns[i].name + ' scenery');
         card.appendChild(image);
       
