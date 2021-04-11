@@ -53,7 +53,7 @@ footer {
   padding: 15px 0;
 }
 
-/* medium css -- assignment said to only create 1 css file */ 
+/* MEDIA QUERY - MEDIUM -- assignment said to only create 1 css file */ 
 
 @media only screen and (min-width: 645px) {
 
