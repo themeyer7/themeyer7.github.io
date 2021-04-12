@@ -1,7 +1,6 @@
 //location of file with info
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
-
 //get info from file
 fetch(requestURL)
   .then(function (response) {
