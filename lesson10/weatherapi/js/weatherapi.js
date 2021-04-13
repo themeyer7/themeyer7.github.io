@@ -1,5 +1,5 @@
 //location of file with info
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=8cdbb2b865b52ea0e6ede10017720a4a';
+const apiURL = '//api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=8cdbb2b865b52ea0e6ede10017720a4a';
 
 //get info from file
 fetch(apiURL)

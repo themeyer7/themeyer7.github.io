@@ -1,0 +1,44 @@
+/* MEDIA QUERY - LARGE */
+@media only screen and (min-width: 1024px) {
+
+  #headerWrap {background-color: #215fbc;}
+  #navWrap {background-color: #74a2e7;}
+
+  /* center content on wide screen */
+  header, nav, main, footer {
+    max-width: 64rem;
+    margin:auto;
+  }
+
+  /* Home Page */
+  div.townbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  div.townbox section {
+    grid-template-columns: 1fr;
+  }
+
+  div.townbox img, div.townbox section:nth-child(even) img {
+    grid-column: 1;
+    grid-row: 6;
+  }
+
+/* Storm Center page */
+  form label.danger {
+    padding: .25rem;
+  }
+
+  /* Gallery page */
+
+  div.gallerywrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  figure:hover {
+    box-shadow: 0 0 5px 5px gray;
+  }
+
+} /* end LARGE media query */
