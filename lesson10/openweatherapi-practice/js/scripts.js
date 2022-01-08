@@ -16,14 +16,28 @@ fetch(apiURL)
     document.getElementById('windSpeed').innerHTML=weatherInfo.wind.speed;
 
     const iconcode = weatherInfo.weather[0].icon;
-    console.log(iconcode);
+//    console.log(iconcode);
 
     const icon_path="//openweathermap.org/img/w/"+iconcode+".png";
-    console.log(icon_path);
+//    console.log(icon_path);
 
     document.getElementById('weather_icon').src = icon_path;
 
  }); //end of "then" fat arrow function
 
+// Forcast section
+const mydate = new Date();
+console.log(mydate);
 
+const y = mydate.getDay();
+console.log(y);
 
+const myweekday = new Array(7);
+myweekday[0] = "Sunday";
+myweekday[1] = "Monday";
+myweekday[2] = "Tuesday";
+myweekday[3] = "Wednesday";
+myweekday[4] = "Thursday";
+myweekday[5] = "Friday";
+myweekday[6] = "Saturday";
+console.log(myweekday[y]);
